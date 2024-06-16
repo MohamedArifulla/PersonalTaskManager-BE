@@ -3,7 +3,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const tasksRouter = require('./routes/tasks'); 
 const authRouter = require('./routes/auth');
-
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const authRoutes = require('./routes/auth');
+const taskRoutes = require('./routes/tasks');
 const app = express();
 const port = process.env.PORT || 3000;
 
